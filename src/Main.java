@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -100,47 +103,3 @@ public class Main {
     }
 }
 
-public class User {
-    private String username;
-    private String password;
-
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
-    /**
-     * Gets the username of the user.
-     */
-    public String getUsername() {
-        return username;
-    }
-
-    /**
-     * Gets the password of the user.
-     */
-    public String getPassword() {
-        return password;
-    }
-
-    /**
-     * Sets the username of the user.
-     * @param username The username to set.
-     */
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    /**
-     * Sets the password of the user.
-     * @param password The password to set.
-     */
-    public void setPassword(String password) {
-        this.password = password;
-    }
-}
-
-public interface IAuthenticationService {
-    User signUp(String username, String password);
-    User logIn(String username, String password);
-}
